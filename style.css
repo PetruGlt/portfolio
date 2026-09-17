@@ -3,13 +3,13 @@
    ========================================================================== */
 :root {
     /* Color Palette - Cyber Dark Theme */
-    --bg-primary: #08090d;
-    --bg-secondary: #11141d;
-    --accent-cyan: #00e5ff;
+    --bg-primary: #2d375c;
+    --bg-secondary: #30458370;
+    --accent-cyan: #11ff00;
     --accent-green: #00ff66;
-    --accent-purple: #7000ff;
+    --accent-purple: #247db0;
     --text-primary: #f0f3f8;
-    --text-muted: #8e9bb0;
+    --text-muted: #93a843;
     --border-color: rgba(255, 255, 255, 0.08);
     --glow-cyan: 0 0 15px rgba(0, 229, 255, 0.3);
     --glow-green: 0 0 15px rgba(0, 255, 102, 0.3);

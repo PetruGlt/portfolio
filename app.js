@@ -1,10 +1,11 @@
-/* ==========================================================================
-   PARTICLE NETWORK BACKGROUND
-   ========================================================================== */
+
 class ParticleBackground {
     constructor() {
         this.canvas = document.getElementById('particle-canvas');
-        if (!this.canvas) return;
+        
+        if (!this.canvas) 
+            return;
+
         this.ctx = this.canvas.getContext('2d');
         this.particles = [];
         this.connectionDistance = 120;
@@ -19,6 +20,7 @@ class ParticleBackground {
     init() {
         this.resize();
         this.particles = [];
+
         for (let i = 0; i < this.particleCount; i++) {
             this.particles.push({
                 x: Math.random() * this.canvas.width,
@@ -34,7 +36,7 @@ class ParticleBackground {
         this.canvas.width = window.innerWidth;
         this.canvas.height = window.innerHeight;
 
-        // Adjust particle count based on screen size
+        // particle count based on display
         if (window.innerWidth < 768) {
             this.particleCount = 20;
             this.connectionDistance = 80;
@@ -84,9 +86,6 @@ class ParticleBackground {
     }
 }
 
-/* ==========================================================================
-   INTERNATIONALIZATION (i18n) — RO / EN
-   ========================================================================== */
 const translations = {
     ro: {
         'nav.about': 'Despre mine',
